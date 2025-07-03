@@ -26,9 +26,10 @@ header {
 header h1 {
   font-size: 1.5rem;
    background-color:#00B0FF;
-   padding-right: 15px;
+  
     padding-bottom: 5px;
     padding-left: 13px;
+    padding-right: 15px;
      border-radius: 5px;
      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
@@ -196,34 +197,31 @@ footer a {
 
 @media (max-width: 480px) {
   header {
-    flex-direction: inline-flex;
-    padding: 1rem;
-    height: auto;
-    display:flex;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
     text-align: center;
+    padding: 1rem;
   }
 
   header h1 {
-    padding:auto;
-    height:10px;
-    
-    
-    
-      
+    width: auto;
+    font-size: 1.3rem;
+    padding: 10px 16px;
   }
 
   nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
-    margin-top: 1rem;
   }
 
   nav a {
-    width: auto;
+    width: 150px;
     height: auto;
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
+    margin: 0;
   }
 }
