@@ -6,6 +6,7 @@
 }
 
 body {
+  
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   color: #222;
@@ -24,16 +25,42 @@ header {
 
 header h1 {
   font-size: 1.5rem;
+   background-color: #0b9999;
+   width: 227px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+     border-radius: 5px;
+     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
+
+
+
 
 nav a {
   color: white;
   margin-left: 1rem;
   text-decoration: none;
+  background-color: #0b9999;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+  transition: 0.5s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+   background-color: #097474;
+   transition: 0.5s;
+   
+
+
+   
+  
+
+
 }
 
 .hero {
@@ -47,18 +74,33 @@ nav a:hover {
   display: inline-block;
   margin-top: 1rem;
   background-color: white;
-  color: #2a2a72;
+  color: #3939cf;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+  transition: 0.5s;
 }
+
+.hero .btn:hover{
+   background-color: rgb(172, 172, 172);
+   transition: 0.5s;
+  
+
+}
+
 
 .sobre,
 .produtos,
 .contato {
   padding: 2rem;
   text-align: center;
+  
+}
+.sobre p{
+  font-weight: 500;
+  padding-top: 10px;
 }
 
 .galeria {
@@ -67,6 +109,7 @@ nav a:hover {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
 .produto {
@@ -86,13 +129,22 @@ nav a:hover {
   margin: 0.5rem 0;
 }
 
+.produto p { 
+  font-weight: 600;
+  padding: 10px;
+}
+
 .produto .btn {
   background-color: #2a2a72;
   color: white;
   padding: 0.3rem 0.7rem;
   border-radius: 4px;
   text-decoration: none;
+  transition: 0.5s;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
+
+
 
 .contato form {
   display: flex;
@@ -100,6 +152,7 @@ nav a:hover {
   gap: 1rem;
   max-width: 400px;
   margin: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
 .contato input,
@@ -116,6 +169,14 @@ nav a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s;
+   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.contato button:hover{
+  background-color: #171738;
+  transition: 0.5s;
 }
 
 footer {
@@ -128,5 +189,6 @@ footer {
 
 footer a {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: 500;
 }
