@@ -197,7 +197,9 @@ footer a {
 @media (max-width: 480px) {
   header {
     flex-direction: inline-flex;
-     padding: 0.5rem 0;
+    padding: 1rem;
+    height: auto;
+    display:flex;
     align-items: stretch;
     text-align: center;
   }
