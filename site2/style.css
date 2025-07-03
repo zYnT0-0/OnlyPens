@@ -204,6 +204,11 @@ footer a {
     text-align: center;
   }
 
+  header h1 {
+    padding:0.5rem 1rem;
+    height:auto;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
