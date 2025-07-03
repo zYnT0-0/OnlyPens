@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2a2a72;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(45deg, #2a2a72, #009ffd);
+  color: white;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: white;
+  color: #2a2a72;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sobre,
+.produtos,
+.contato {
+  padding: 2rem;
+  text-align: center;
+}
+
+.galeria {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.produto {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 220px;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produto h3 {
+  margin: 0.5rem 0;
+}
+
+.produto .btn {
+  background-color: #2a2a72;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contato input,
+.contato textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contato button {
+  background-color: #2a2a72;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2a2a72;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
