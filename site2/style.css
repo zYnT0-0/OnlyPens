@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -116,23 +115,41 @@ nav a:hover {
 .produto {
   background-color: white;
   padding: 1rem;
+  height: 600px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 220px;
+
+  /* --- INÍCIO DAS NOVAS PROPRIEDADES PARA ALINHAMENTO --- */
+  display: flex; /* Transforma o cartão em um container flexível */
+  flex-direction: column; /* Empilha os itens verticalmente */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  /* --- FIM DAS NOVAS PROPRIEDADES --- */
 }
 
 .produto img {
   width: 100%;
   border-radius: 5px;
+  /* --- AJUSTE PARA A IMAGEM --- */
+   height: 400px; /* Define uma altura fixa para a imagem */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  /* --- FIM DO AJUSTE --- */
 }
 
 .produto h3 {
+  font-weight: 500;
   margin: 0.5rem 0;
+  text-align: center; /* Centraliza o texto do nome do produto */
 }
 
 .produto p { 
   font-weight: 600;
   padding: 10px;
+  text-align: center; /* Centraliza o texto do preço */
+  /* --- ADICIONADO PARA EMPURRAR O PREÇO PARA BAIXO, SE HOUVER ESPAÇO --- */
+  margin-top: auto; 
+  /* --- FIM DA ADIÇÃO --- */
 }
 
 .produto .btn {
@@ -144,6 +161,9 @@ nav a:hover {
   transition: 0.5s;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
   padding-bottom: 8px;
+  /* --- ADICIONADO PARA EMPURRAR O BOTÃO PARA BAIXO --- */
+  margin-top: auto; /* Empurra o botão para a parte inferior do cartão */
+  /* --- FIM DA ADIÇÃO --- */
 }
 
 
